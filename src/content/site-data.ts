@@ -168,7 +168,7 @@ export function getStructuredData() {
         url: siteUrl,
         description: artist.description,
         genre: artist.genre,
-        image: `${siteUrl}/opengraph-image`,
+        image: `${siteUrl}/asa-cole-hero.jpg`,
         recordLabel: { "@id": `${siteUrl}#imprint` },
         publisher: { "@id": `${voxPetraUrl}#organization` },
         ...(liveLinks.length

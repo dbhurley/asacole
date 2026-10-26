@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SiteMark } from "@/components/SiteMark";
 import { StreamingLinks } from "@/components/StreamingLinks";
 import {
   about,
@@ -82,49 +81,46 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="mx-auto max-w-[1180px] px-4 pb-14 pt-10 sm:px-6 sm:pt-16 lg:pb-20 lg:pt-20">
-      <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.12fr)_minmax(280px,0.78fr)] lg:gap-14">
-        <div>
-          <p className="label text-[11px] text-clay">Debut single</p>
-          <h1 className="display hero-title mt-4 text-ink">
-            Asa
-            <span className="block">Cole</span>
-          </h1>
-          <p className="single-title mt-6 text-moss">{debutSingle.title}</p>
-          <p className="mt-4 max-w-xl text-lg leading-8 text-ink-soft">
-            Bright young-tenor indie folk-pop worship on Vox Petra. Sunlit,
-            acoustic, and centered on Jesus Christ.
+    <section id="top" className="hero-photo">
+      <Image
+        src="/asa-cole-hero.jpg"
+        alt="Asa Cole with his guitar in a golden field"
+        fill
+        priority
+        sizes="100vw"
+        className="hero-photo-img"
+      />
+      <div className="hero-photo-shade" aria-hidden="true" />
+      <div className="hero-photo-copy">
+        <p className="label text-[11px] text-sun">Debut single</p>
+        <h1 className="display hero-title mt-4 text-paper">
+          Asa
+          <span className="block">Cole</span>
+        </h1>
+        <p className="single-title mt-5 text-sun">{debutSingle.title}</p>
+        <p className="mt-4 max-w-xl text-lg leading-8 text-paper/85">
+          Bright young-tenor indie folk-pop worship on Vox Petra. Sunlit,
+          acoustic, and centered on Jesus Christ.
+        </p>
+        <div id="single" className="mt-8">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="coming-badge">{debutSingle.statusLabel}</span>
+            <p className="text-sm text-paper/80">{debutSingle.note}</p>
+          </div>
+          <StreamingLinks />
+          <p className="mt-3 max-w-xl text-sm leading-6 text-paper/75">
+            Spotify, Apple Music, and YouTube will be linked here when the
+            single is out. Until then, each one is a Coming soon placeholder.
           </p>
-          <div id="single" className="mt-8">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="coming-badge">{debutSingle.statusLabel}</span>
-              <p className="text-sm text-ink-soft">{debutSingle.note}</p>
-            </div>
-            <StreamingLinks />
-            <p className="mt-3 max-w-xl text-sm leading-6 text-ink-soft">
-              Spotify, Apple Music, and YouTube will be linked here when the
-              single is out. Until then, each one is a Coming soon placeholder.
-            </p>
-          </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a className="button button-primary" href="#album">
-              Stones of Help
-            </a>
-            <a className="button button-secondary" href="#about">
-              About Asa
-            </a>
-          </div>
         </div>
-        <figure className="mark-frame mx-auto w-full max-w-[460px]">
-          <SiteMark />
-          <figcaption className="flex items-end justify-between gap-4 px-5 py-4">
-            <span>
-              <span className="label block text-[10px] text-olive">{album.scripture}</span>
-              <span className="display mt-1 block text-3xl text-ink">{album.stoneName}</span>
-            </span>
-            <span className="text-right text-sm text-ink-soft">{album.title}</span>
-          </figcaption>
-        </figure>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a className="button button-primary" href="#album">
+            Stones of Help
+          </a>
+          <a className="button button-secondary" href="#about">
+            About Asa
+          </a>
+        </div>
       </div>
     </section>
   );

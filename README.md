@@ -12,7 +12,7 @@ Public facts only:
 
 Spotify, Apple Music, and YouTube are placeholders. Empty `href` values in `src/content/site-data.ts` render as non-link Coming soon slots. Paste a public URL into `href` when that link is live.
 
-The stone drawing on the home page is original site art for the Ebenezer image. It is not a photograph of Asa and it is not claimed as final cover art.
+The homepage hero and Open Graph image use the approved portrait at `public/asa-cole-hero.jpg`.
 
 ## Working locally
 

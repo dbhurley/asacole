@@ -47,11 +47,20 @@ export const metadata: Metadata = {
     siteName: artist.name,
     title: `${artist.name} | ${debutSingle.title}`,
     description: `${debutSingle.title} is the debut single from Asa Cole. ${debutSingle.note}`,
+    images: [
+      {
+        url: "/asa-cole-hero.jpg",
+        width: 1280,
+        height: 720,
+        alt: "Asa Cole with his guitar in a golden field",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${artist.name} | ${debutSingle.title}`,
     description: debutSingle.note,
+    images: ["/asa-cole-hero.jpg"],
   },
   robots: { index: true, follow: true },
   category: "music",
