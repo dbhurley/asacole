@@ -92,8 +92,7 @@ function Hero() {
       />
       <div className="hero-photo-shade" aria-hidden="true" />
       <div className="hero-photo-copy">
-        <p className="label text-[11px] text-sun">Debut single</p>
-        <h1 className="display hero-title mt-4 text-paper">
+        <h1 className="display hero-title text-paper">
           Asa
           <span className="block">Cole</span>
         </h1>
@@ -142,24 +141,22 @@ function FactBar() {
 function About() {
   return (
     <section id="about" className="mx-auto max-w-[1180px] px-4 py-16 sm:px-6 sm:py-24">
-      <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-        <div>
-          <p className="label text-[11px] text-clay">About</p>
-          <h2 className="display mt-3 text-5xl text-ink sm:text-7xl">{about.heading}</h2>
-          <p className="watermark mt-6 text-6xl sm:text-8xl" aria-hidden>
-            Ebenezer
-          </p>
-        </div>
+      <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
+        <h2 className="display text-5xl text-ink sm:text-7xl">{about.heading}</h2>
         <div className="space-y-5 text-lg leading-8 text-ink-soft">
           {about.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
-          <blockquote className="verse border-l-2 border-sun pl-5 text-2xl text-ink sm:text-3xl">
-            {album.verse}
-            <cite className="label mt-4 block text-[10px] not-italic text-olive">
-              {album.scripture}
-            </cite>
-          </blockquote>
+          <figure className="stone-note">
+            <blockquote className="verse text-2xl text-ink sm:text-3xl">
+              {album.verse}
+            </blockquote>
+            <figcaption className="mt-5 border-t border-ink/10 pt-5">
+              <p className="text-2xl text-ink">Ebenezer: stone of help</p>
+              <p className="mt-2 text-base leading-7">Thus far the Lord has helped us.</p>
+              <p className="mt-2 text-sm text-olive">{album.scripture}</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -172,8 +169,7 @@ function Album() {
       <div className="mx-auto max-w-[1180px] px-4 py-16 sm:px-6 sm:py-24">
         <div className="flex flex-col gap-6 border-b border-ink/10 pb-8 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="label text-[11px] text-clay">{album.kind}</p>
-            <h2 className="display mt-3 text-5xl text-ink sm:text-7xl">{album.title}</h2>
+            <h2 className="display text-5xl text-ink sm:text-7xl">{album.title}</h2>
           </div>
           <p className="max-w-md text-base leading-7 text-ink-soft">{album.summary}</p>
         </div>
@@ -201,11 +197,10 @@ function Faith() {
   return (
     <section id="faith" className="mx-auto max-w-[1180px] px-4 py-16 sm:px-6 sm:py-24">
       <div className="panel px-6 py-10 sm:px-10 sm:py-14">
-        <p className="label text-[11px] text-clay">Faith</p>
-        <h2 className="display mt-3 text-5xl text-ink sm:text-6xl">{faith.heading}</h2>
+        <h2 className="display text-5xl text-ink sm:text-6xl">{faith.heading}</h2>
         <p className="mt-6 max-w-3xl text-xl leading-9 text-ink-soft">{faith.statement}</p>
-        <p className="label mt-6 text-[10px] text-olive">
-          {album.scripture}, the stone called {album.stoneName}
+        <p className="mt-6 max-w-3xl text-base leading-7 text-ink-soft">
+          {album.scripture}. The Ebenezer stone. Thus far the Lord has helped us.
         </p>
       </div>
     </section>
@@ -216,8 +211,7 @@ function Questions() {
   return (
     <section id="questions" className="mx-auto max-w-[1180px] px-4 pb-8 sm:px-6" aria-labelledby="questions-heading">
       <div className="border-b border-ink/10 pb-6">
-        <p className="label text-[11px] text-clay">For listeners</p>
-        <h2 id="questions-heading" className="display mt-3 text-5xl text-ink sm:text-6xl">
+        <h2 id="questions-heading" className="display text-5xl text-ink sm:text-6xl">
           Questions
         </h2>
       </div>
@@ -238,8 +232,7 @@ function Contact() {
     <section id="contact" className="mx-auto max-w-[1180px] px-4 py-16 sm:px-6 sm:py-20">
       <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
         <div>
-          <p className="label text-[11px] text-clay">Contact</p>
-          <h2 className="display mt-3 text-5xl text-ink sm:text-7xl">{labelCredit.heading}</h2>
+          <h2 className="display text-5xl text-ink sm:text-7xl">{labelCredit.heading}</h2>
           <p className="mt-6 max-w-xl text-lg leading-8 text-ink-soft">{labelCredit.summary}</p>
           <dl className="mt-8 space-y-4">
             <div>
@@ -260,8 +253,7 @@ function Contact() {
           </dl>
         </div>
         <div className="panel p-6 sm:p-8">
-          <p className="label text-[10px] text-olive">Streaming placeholders</p>
-          <h3 className="display mt-3 text-4xl text-ink">{debutSingle.title}</h3>
+          <h3 className="display text-4xl text-ink">{debutSingle.title}</h3>
           <p className="mt-3 text-sm leading-6 text-ink-soft">{debutSingle.note}</p>
           <div className="mt-5">
             <StreamingLinks />

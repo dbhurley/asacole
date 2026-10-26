@@ -330,12 +330,10 @@ section[id] {
   color: var(--color-clay);
 }
 
-.watermark {
-  font-family: var(--font-display);
-  font-weight: 560;
-  letter-spacing: -0.04em;
-  line-height: 0.8;
-  color: color-mix(in oklab, var(--color-olive) 22%, transparent);
+.stone-note {
+  margin-top: 0.5rem;
+  border-left: 2px solid var(--color-sun);
+  padding-left: 1.25rem;
 }
 
 a:focus-visible,

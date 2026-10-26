@@ -39,7 +39,7 @@ ${debutSingle.title}: ${debutSingle.statusLabel}. ${debutSingle.note}
 
 ## Debut album
 ${album.title}. ${album.summary}
-Scripture: ${album.scripture} (${album.stoneName})
+Scripture: ${album.scripture}. Ebenezer: stone of help. Thus far the Lord has helped us.
 ${album.verse}
 
 ## Tracklist

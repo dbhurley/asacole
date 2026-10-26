@@ -7,7 +7,7 @@ export const artist = {
   parentLabel: "Vox Petra",
   genre: ["Indie folk-pop", "Worship", "Christian"],
   description:
-    "Asa Cole is a new artist on Vox Petra, David Hurley's Christian music label. He sings bright young-tenor indie folk-pop worship: sunlit and acoustic, gospel-centered and Christ-focused, drawn from Scripture stories.",
+    "Asa Cole is a new artist on Vox Petra, an independent Christian music label. He sings bright young-tenor indie folk-pop worship: sunlit and acoustic, gospel-centered and Christ-focused, drawn from Scripture stories.",
 } as const;
 
 export const debutSingle = {
@@ -30,7 +30,7 @@ export const album = {
 export const about = {
   heading: "About Asa",
   paragraphs: [
-    "Asa Cole is a new artist on Vox Petra, David Hurley's Christian music label.",
+    "Asa Cole is a new artist on Vox Petra, an independent Christian music label.",
     "He sings bright young-tenor indie folk-pop worship: sunlit and acoustic, with Jesus Christ at the center.",
     "The songs are gospel-centered and drawn from Scripture stories.",
   ],
@@ -48,7 +48,7 @@ export const labelCredit = {
   parentLabel: artist.parentLabel,
   parentUrl: voxPetraUrl,
   summary:
-    "Asa Cole is on Vox Petra, David Hurley's Christian music label, under the Driven By Heaven imprint.",
+    "Asa Cole is on Vox Petra, an independent Christian music label, under the Driven By Heaven imprint.",
 } as const;
 
 export type StreamingLink = {
