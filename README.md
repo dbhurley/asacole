@@ -5,7 +5,7 @@ Debut artist site for Asa Cole on Vox Petra. The stack matches the other Vox Pet
 Public facts only:
 
 - Artist: Asa Cole, bright young-tenor indie folk-pop worship
-- Label: Vox Petra (David Hurley's Christian music label), imprint Driven By Heaven
+- Label: Vox Petra, an independent Christian music label, imprint Driven By Heaven
 - Debut album: Stones of Help, from 1 Samuel 7:12 (Ebenezer)
 - Debut single: Dust and Breath, coming soon
 - Domain: [asacole.com](https://asacole.com)
@@ -27,12 +27,12 @@ The dev server runs at [http://localhost:3000](http://localhost:3000).
 
 ## Deploy to Vercel and attach asacole.com
 
-The domain `asacole.com` is already registered on the Vercel team **dbh ventures** (`dbhurleys-projects`). No environment variables are required.
+The domain `asacole.com` is already registered on Vercel and attached to this project. No environment variables are required.
 
 ### Dashboard
 
-1. Open the Vercel team `dbhurleys-projects` (dbh ventures).
-2. Choose **Add New Project** and import the GitHub repository `dbhurley/asacole`.
+1. Open the Vercel team that already serves the site.
+2. Import this GitHub repository if the project is not linked yet.
 3. Framework preset: **Next.js**. Root directory: repository root. Install command: `npm ci`. Build command: `npm run build`. Leave the output on the Next.js default.
 4. Deploy. After this pull request merges, production should track `main`. Preview deployments can use the pull request branch before merge.
 5. Open the project, then **Settings**, then **Domains**.
@@ -47,9 +47,9 @@ From a machine logged into that team:
 ```bash
 npm i -g vercel
 vercel login
-vercel link --scope dbhurleys-projects
-vercel --prod --scope dbhurleys-projects
-vercel domains inspect asacole.com --scope dbhurleys-projects
+vercel link
+vercel --prod
+vercel domains inspect asacole.com
 ```
 
 If the domain already belongs to the team, attach or move it from **Project Settings > Domains** rather than registering it a second time.
