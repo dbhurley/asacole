@@ -1,0 +1,27 @@
+import { ImageResponse } from "next/og";
+
+export const size = { width: 32, height: 32 };
+export const contentType = "image/png";
+
+export default function Icon() {
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "#1C2B24",
+          color: "#F6E7C1",
+          fontSize: 14,
+          fontWeight: 700,
+        }}
+      >
+        AC
+      </div>
+    ),
+    { ...size },
+  );
+}
