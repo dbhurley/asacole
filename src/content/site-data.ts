@@ -96,13 +96,11 @@ export const tracks = [
   { number: 1, title: "Dust and Breath", image: "/images/asa-01-dust-and-breath.jpg", imageAlt: "Asa Cole in a golden field at dawn with his guitar", note: "Debut single, coming soon" },
   { number: 2, title: "Hither Road", image: "/images/asa-02-hither-road.jpg", imageAlt: "Asa Cole walking a gravel country road with his guitar" },
   { number: 3, title: "Pigpen Prayer", image: "/images/asa-03-pigpen-prayer.jpg", imageAlt: "Asa Cole grinning on a farm fence by a pig pen" },
-  { number: 4, title: "Barley Field" },
-  { number: 5, title: "Nineveh Bound" },
-  { number: 6, title: "The Ledger" },
-  { number: 7, title: "Rooster Crow", image: "/images/asa-06-rooster-crow.jpg", imageAlt: "Asa Cole on a porch at sunrise with coffee and a rooster" },
-  { number: 8, title: "Bronze Serpent", image: "/images/asa-07-bronze-serpent.jpg", imageAlt: "Asa Cole looking up from a desert overlook" },
-  { number: 9, title: "Jordan Water", image: "/images/asa-08-jordan-water.jpg", imageAlt: "Asa Cole laughing as he wades in a river" },
-  { number: 10, title: "Gravel and Glory", image: "/images/asa-09-gravel-and-glory.jpg", imageAlt: "Asa Cole placing a stone on a roadside cairn at sunset" },
+  { number: 4, title: "Wrong Boat", image: "/images/asa-05-wrong-boat.jpg", imageAlt: "Asa Cole with his guitar on a dock in the rain" },
+  { number: 5, title: "Rooster Crow", image: "/images/asa-06-rooster-crow.jpg", imageAlt: "Asa Cole on a porch at sunrise with coffee and a rooster" },
+  { number: 6, title: "Bronze Serpent", image: "/images/asa-07-bronze-serpent.jpg", imageAlt: "Asa Cole looking up from a desert overlook" },
+  { number: 7, title: "Jordan Water", image: "/images/asa-08-jordan-water.jpg", imageAlt: "Asa Cole laughing as he wades in a river" },
+  { number: 8, title: "Gravel and Glory", image: "/images/asa-09-gravel-and-glory.jpg", imageAlt: "Asa Cole placing a stone on a roadside cairn at sunset" },
 ] as const;
 
 export const facts = [
