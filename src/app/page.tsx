@@ -94,7 +94,7 @@ function Hero() {
       <div className="hero-photo">
         <Image
           src="/images/asa-v2-hero-rooftop-wide.jpg"
-          alt="Asa Cole laughing with arms wide on a sunny rooftop in a red bomber jacket and lime sneakers"
+          alt="Asa Cole walking across a sunny rooftop in a red bomber jacket and lime sneakers"
           fill
           priority
           sizes="(min-width: 900px) 60vw, 100vw"
@@ -152,7 +152,7 @@ function About() {
       <div className="about-headshot tilt-right">
         <Image
           src="/images/asa-v2-headshot-square.jpg"
-          alt="Asa Cole headshot, laughing in a blue and orange jacket against a pink and yellow mural"
+          alt="Asa Cole headshot, smiling in a blue and orange jacket against a pink and yellow mural"
           fill
           sizes="220px"
           className="cover"
@@ -196,7 +196,7 @@ function Stage() {
     <div className="stage">
       <Image
         src="/images/asa-v2-banner-confetti-stage-wide.jpg"
-        alt="Asa Cole singing in a magenta sequin suit as rainbow confetti falls on stage"
+        alt="Asa Cole singing in a magenta sequin suit as colorful confetti falls on stage"
         fill
         sizes="100vw"
         className="cover"
