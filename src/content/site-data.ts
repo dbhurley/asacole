@@ -94,12 +94,12 @@ export function liveStreamingLinks() {
 
 export const tracks = [
   { number: 1, title: "Dust and Breath", image: "/images/asa-v2-01-dust-and-breath-garden-mural.jpg", imageAlt: "Asa Cole with eyes closed and arms open in front of a bright garden mural with clouds of color", note: "Debut single, coming soon" },
-  { number: 2, title: "Hither Road", image: "/images/asa-v2-02-hither-road-convertible.jpg", imageAlt: "Asa Cole driving a red vintage convertible in a tropical shirt" },
+  { number: 2, title: "Hither Road", image: "/images/asa-v2-02-hither-road-convertible.jpg", imageAlt: "Asa Cole in a red vintage convertible on a palm-lined Hollywood street, looking at the camera" },
   { number: 3, title: "Pigpen Prayer", image: "/images/asa-v2-03-pigpen-prayer-pink-suit.jpg", imageAlt: "Asa Cole in a pink suit sitting on a curb beside a pig statue" },
-  { number: 4, title: "Wrong Boat", image: "/images/asa-v2-04-wrong-boat-swan-whale.jpg", imageAlt: "Asa Cole in a yellow raincoat on a swan boat, side-eyeing a giant inflatable whale" },
-  { number: 5, title: "Rooster Crow", image: "/images/asa-v2-05-rooster-crow-sunrise-rooftop.jpg", imageAlt: "Asa Cole in a rooster print shirt holding an alarm clock at sunrise" },
+  { number: 4, title: "Wrong Boat", image: "/images/asa-v2-04-wrong-boat-swan-whale.jpg", imageAlt: "Asa Cole as a sea captain at the wheel of a colorful fishing boat beside a giant inflatable whale" },
+  { number: 5, title: "Rooster Crow", image: "/images/asa-v2-05-rooster-crow-sunrise-rooftop.jpg", imageAlt: "Asa Cole waking up in bed under a rooster print blanket, alarm clock at 4:30" },
   { number: 6, title: "Bronze Serpent", image: "/images/asa-v2-06-bronze-serpent-neon-sign.jpg", imageAlt: "Asa Cole looking up at a glowing bronze serpent sign" },
-  { number: 7, title: "Jordan Water", image: "/images/asa-v2-07-jordan-water-fountain.jpg", imageAlt: "Asa Cole laughing as he leaps through a city fountain" },
+  { number: 7, title: "Jordan Water", image: "/images/asa-v2-07-jordan-water-fountain.jpg", imageAlt: "Asa Cole looking up with both hands raised in a city fountain" },
   { number: 8, title: "Gravel and Glory", image: "/images/asa-v2-08-gravel-and-glory-gold-sequins.jpg", imageAlt: "Asa Cole walking a backstage hall of gold streamers in a gold sequin jacket" },
 ] as const;
 
@@ -229,9 +229,9 @@ export function getStructuredData() {
 
 export const gallery = [
   { src: "/images/asa-v2-headshot-square.jpg", alt: "Asa Cole smiling in a blue and orange jacket against a pink and yellow mural" },
-  { src: "/images/asa-v2-neon-diner-portrait.jpg", alt: "Asa Cole talking in a neon diner booth with a milkshake" },
+  { src: "/images/asa-v2-neon-diner-portrait.jpg", alt: "Asa Cole smiling at the camera in a neon diner booth with a milkshake" },
   { src: "/images/asa-v2-laundromat-portrait.jpg", alt: "Asa Cole reading on a dryer in a pink and mint laundromat" },
   { src: "/images/asa-v2-about-record-shop-portrait.jpg", alt: "Asa Cole flipping through vinyl in a record shop" },
   { src: "/images/asa-v2-06-bronze-serpent-neon-sign.jpg", alt: "Asa Cole under a glowing serpent sign at dusk" },
-  { src: "/images/asa-v2-07-jordan-water-fountain.jpg", alt: "Asa Cole leaping through a city fountain" },
+  { src: "/images/asa-v2-07-jordan-water-fountain.jpg", alt: "Asa Cole with hands raised in a city fountain" },
 ] as const;
