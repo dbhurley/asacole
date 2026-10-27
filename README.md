@@ -4,7 +4,7 @@ Debut artist site for Asa Cole on Vox Petra. The stack matches the other Vox Pet
 
 Public facts only:
 
-- Artist: Asa Cole, bright young-tenor indie folk-pop worship
+- Artist: Asa Cole, loud, joyful, colorful pop worship
 - Label: Vox Petra, an independent Christian music label, imprint Driven By Heaven
 - Debut album: Stones of Help, from 1 Samuel 7:12 (Ebenezer)
 - Debut single: Dust and Breath, coming soon
@@ -12,7 +12,7 @@ Public facts only:
 
 Spotify, Apple Music, and YouTube are placeholders. Empty `href` values in `src/content/site-data.ts` render as non-link Coming soon slots. Paste a public URL into `href` when that link is live.
 
-The homepage hero and Open Graph image use the approved portrait at `public/asa-cole-hero.jpg`.
+The homepage hero uses `public/images/asa-v2-hero-rooftop-wide.jpg`. The Open Graph and social image is `public/asa-cole-og.jpg` (1200x630). All photos are the v2 set in `public/images/asa-v2-*`.
 
 ## Working locally
 
