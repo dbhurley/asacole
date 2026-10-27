@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: "/asa-cole-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Asa Cole laughing with arms wide on a sunny rooftop in a red bomber jacket",
+        alt: "Asa Cole walking across a sunny rooftop in a red bomber jacket",
       },
     ],
   },
