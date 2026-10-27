@@ -11,7 +11,7 @@ export const artist = {
 } as const;
 
 export const debutSingle = {
-  title: "Dust and Breath",
+  title: "Dust and Breath", image: "/images/asa-01-dust-and-breath.jpg", imageAlt: "Asa Cole in a golden field at dawn with his guitar",
   statusLabel: "Coming soon",
   note: "Streaming links are not live yet.",
 } as const;
@@ -94,15 +94,15 @@ export function liveStreamingLinks() {
 
 export const tracks = [
   { number: 1, title: "Dust and Breath", note: "Debut single, coming soon" },
-  { number: 2, title: "Hither Road" },
-  { number: 3, title: "Pigpen Prayer" },
+  { number: 2, title: "Hither Road", image: "/images/asa-02-hither-road.jpg", imageAlt: "Asa Cole walking a gravel country road with his guitar" },
+  { number: 3, title: "Pigpen Prayer", image: "/images/asa-03-pigpen-prayer.jpg", imageAlt: "Asa Cole grinning on a farm fence by a pig pen" },
   { number: 4, title: "Barley Field" },
   { number: 5, title: "Nineveh Bound" },
   { number: 6, title: "The Ledger" },
-  { number: 7, title: "Rooster Crow" },
-  { number: 8, title: "Bronze Serpent" },
-  { number: 9, title: "Jordan Water" },
-  { number: 10, title: "Gravel and Glory" },
+  { number: 7, title: "Rooster Crow", image: "/images/asa-06-rooster-crow.jpg", imageAlt: "Asa Cole on a porch at sunrise with coffee and a rooster" },
+  { number: 8, title: "Bronze Serpent", image: "/images/asa-07-bronze-serpent.jpg", imageAlt: "Asa Cole looking up from a desert overlook" },
+  { number: 9, title: "Jordan Water", image: "/images/asa-08-jordan-water.jpg", imageAlt: "Asa Cole laughing as he wades in a river" },
+  { number: 10, title: "Gravel and Glory", image: "/images/asa-09-gravel-and-glory.jpg", imageAlt: "Asa Cole placing a stone on a roadside cairn at sunset" },
 ] as const;
 
 export const facts = [
@@ -228,3 +228,12 @@ export function getStructuredData() {
     ],
   };
 }
+
+export const gallery = [
+  { src: "/images/asa-candid-diner.jpg", alt: "Asa Cole laughing as he writes in a notebook at a diner booth" },
+  { src: "/images/asa-candid-tailgate.jpg", alt: "Asa Cole tuning his guitar on a pickup tailgate at dusk" },
+  { src: "/images/asa-candid-orchard.jpg", alt: "Asa Cole smiling in an autumn orchard" },
+  { src: "/images/asa-05-wrong-boat.jpg", alt: "Asa Cole with his guitar on a dock in the rain" },
+  { src: "/images/asa-10-up-a-tree.jpg", alt: "Asa Cole playing guitar in a sycamore tree" },
+  { src: "/images/asa-11-fresh-every-morning.jpg", alt: "Asa Cole with a mug at a kitchen window in morning light" },
+] as const;
