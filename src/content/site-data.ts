@@ -11,7 +11,7 @@ export const artist = {
 } as const;
 
 export const debutSingle = {
-  title: "Dust and Breath", image: "/images/asa-01-dust-and-breath.jpg", imageAlt: "Asa Cole in a golden field at dawn with his guitar",
+  title: "Dust and Breath",
   statusLabel: "Coming soon",
   note: "Streaming links are not live yet.",
 } as const;
@@ -93,7 +93,7 @@ export function liveStreamingLinks() {
 }
 
 export const tracks = [
-  { number: 1, title: "Dust and Breath", note: "Debut single, coming soon" },
+  { number: 1, title: "Dust and Breath", image: "/images/asa-01-dust-and-breath.jpg", imageAlt: "Asa Cole in a golden field at dawn with his guitar", note: "Debut single, coming soon" },
   { number: 2, title: "Hither Road", image: "/images/asa-02-hither-road.jpg", imageAlt: "Asa Cole walking a gravel country road with his guitar" },
   { number: 3, title: "Pigpen Prayer", image: "/images/asa-03-pigpen-prayer.jpg", imageAlt: "Asa Cole grinning on a farm fence by a pig pen" },
   { number: 4, title: "Barley Field" },
