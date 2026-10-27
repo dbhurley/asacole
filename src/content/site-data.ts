@@ -5,9 +5,9 @@ export const artist = {
   name: "Asa Cole",
   imprint: "Driven By Heaven",
   parentLabel: "Vox Petra",
-  genre: ["Indie folk-pop", "Worship", "Christian"],
+  genre: ["Pop", "Worship", "Christian"],
   description:
-    "Asa Cole is a new artist on Vox Petra, an independent Christian music label. He sings bright young-tenor indie folk-pop worship: sunlit and acoustic, gospel-centered and Christ-focused, drawn from Scripture stories.",
+    "Asa Cole is a new artist on Vox Petra, an independent Christian music label. He sings loud, joyful, colorful pop worship: big hooks, bright tenor vocals, gospel-centered and Christ-focused, drawn from Scripture stories.",
 } as const;
 
 export const debutSingle = {
@@ -31,8 +31,8 @@ export const about = {
   heading: "About Asa",
   paragraphs: [
     "Asa Cole is a new artist on Vox Petra, an independent Christian music label.",
-    "He sings bright young-tenor indie folk-pop worship: sunlit and acoustic, with Jesus Christ at the center.",
-    "The songs are gospel-centered and drawn from Scripture stories.",
+    "He sings loud, joyful, colorful pop worship with big hooks, bright tenor vocals, and Jesus Christ at the center.",
+    "The songs are gospel-centered and drawn from Scripture stories, told with a grin: a runaway in a pig pen, a prophet on the wrong boat, a rooster that will not stay silent.",
   ],
 } as const;
 
@@ -93,14 +93,14 @@ export function liveStreamingLinks() {
 }
 
 export const tracks = [
-  { number: 1, title: "Dust and Breath", image: "/images/asa-01-dust-and-breath.jpg", imageAlt: "Asa Cole in a golden field at dawn with his guitar", note: "Debut single, coming soon" },
-  { number: 2, title: "Hither Road", image: "/images/asa-02-hither-road.jpg", imageAlt: "Asa Cole walking a gravel country road with his guitar" },
-  { number: 3, title: "Pigpen Prayer", image: "/images/asa-03-pigpen-prayer.jpg", imageAlt: "Asa Cole grinning on a farm fence by a pig pen" },
-  { number: 4, title: "Wrong Boat", image: "/images/asa-05-wrong-boat.jpg", imageAlt: "Asa Cole with his guitar on a dock in the rain" },
-  { number: 5, title: "Rooster Crow", image: "/images/asa-06-rooster-crow.jpg", imageAlt: "Asa Cole on a porch at sunrise with coffee and a rooster" },
-  { number: 6, title: "Bronze Serpent", image: "/images/asa-07-bronze-serpent.jpg", imageAlt: "Asa Cole looking up from a desert overlook" },
-  { number: 7, title: "Jordan Water", image: "/images/asa-08-jordan-water.jpg", imageAlt: "Asa Cole laughing as he wades in a river" },
-  { number: 8, title: "Gravel and Glory", image: "/images/asa-09-gravel-and-glory.jpg", imageAlt: "Asa Cole placing a stone on a roadside cairn at sunset" },
+  { number: 1, title: "Dust and Breath", image: "/images/asa-v2-01-dust-and-breath-garden-mural.jpg", imageAlt: "Asa Cole laughing with arms open in front of a bright garden mural with clouds of color", note: "Debut single, coming soon" },
+  { number: 2, title: "Hither Road", image: "/images/asa-v2-02-hither-road-convertible.jpg", imageAlt: "Asa Cole pointing ahead from a red vintage convertible in a tropical shirt" },
+  { number: 3, title: "Pigpen Prayer", image: "/images/asa-v2-03-pigpen-prayer-pink-suit.jpg", imageAlt: "Asa Cole in a pink suit hugging an inflatable pig" },
+  { number: 4, title: "Wrong Boat", image: "/images/asa-v2-04-wrong-boat-swan-whale.jpg", imageAlt: "Asa Cole in a yellow raincoat on a swan boat with a giant inflatable whale behind him" },
+  { number: 5, title: "Rooster Crow", image: "/images/asa-v2-05-rooster-crow-sunrise-rooftop.jpg", imageAlt: "Asa Cole in a rooster print shirt holding an alarm clock at sunrise" },
+  { number: 6, title: "Bronze Serpent", image: "/images/asa-v2-06-bronze-serpent-neon-sign.jpg", imageAlt: "Asa Cole looking up at a glowing bronze serpent sign" },
+  { number: 7, title: "Jordan Water", image: "/images/asa-v2-07-jordan-water-fountain.jpg", imageAlt: "Asa Cole running and laughing through a city fountain" },
+  { number: 8, title: "Gravel and Glory", image: "/images/asa-v2-08-gravel-and-glory-gold-sequins.jpg", imageAlt: "Asa Cole strutting in a gold sequin jacket through falling gold streamers" },
 ] as const;
 
 export const facts = [
@@ -166,7 +166,7 @@ export function getStructuredData() {
         url: siteUrl,
         description: artist.description,
         genre: artist.genre,
-        image: `${siteUrl}/asa-cole-hero.jpg`,
+        image: `${siteUrl}/asa-cole-og.jpg`,
         recordLabel: { "@id": `${siteUrl}#imprint` },
         publisher: { "@id": `${voxPetraUrl}#organization` },
         ...(liveLinks.length
@@ -228,10 +228,10 @@ export function getStructuredData() {
 }
 
 export const gallery = [
-  { src: "/images/asa-candid-diner.jpg", alt: "Asa Cole laughing as he writes in a notebook at a diner booth" },
-  { src: "/images/asa-candid-tailgate.jpg", alt: "Asa Cole tuning his guitar on a pickup tailgate at dusk" },
-  { src: "/images/asa-candid-orchard.jpg", alt: "Asa Cole smiling in an autumn orchard" },
-  { src: "/images/asa-05-wrong-boat.jpg", alt: "Asa Cole with his guitar on a dock in the rain" },
-  { src: "/images/asa-10-up-a-tree.jpg", alt: "Asa Cole playing guitar in a sycamore tree" },
-  { src: "/images/asa-11-fresh-every-morning.jpg", alt: "Asa Cole with a mug at a kitchen window in morning light" },
+  { src: "/images/asa-v2-headshot-square.jpg", alt: "Asa Cole laughing in a blue and orange jacket against a pink and yellow mural" },
+  { src: "/images/asa-v2-neon-diner-portrait.jpg", alt: "Asa Cole laughing in a neon diner booth with a milkshake" },
+  { src: "/images/asa-v2-roller-rink-portrait.jpg", alt: "Asa Cole roller skating in a rainbow jacket under a disco ball" },
+  { src: "/images/asa-v2-about-record-shop-portrait.jpg", alt: "Asa Cole holding up a vinyl record in a record shop" },
+  { src: "/images/asa-v2-06-bronze-serpent-neon-sign.jpg", alt: "Asa Cole under a glowing serpent sign at dusk" },
+  { src: "/images/asa-v2-07-jordan-water-fountain.jpg", alt: "Asa Cole running through a city fountain" },
 ] as const;

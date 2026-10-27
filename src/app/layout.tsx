@@ -1,21 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Outfit } from "next/font/google";
+import { Bagel_Fat_One, Space_Grotesk } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { artist, debutSingle, getStructuredData, siteUrl } from "@/content/site-data";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const bagel = Bagel_Fat_One({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-fraunces",
+  weight: "400",
+  variable: "--font-display",
   display: "swap",
 });
 
-const outfit = Outfit({
+const grotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-outfit",
+  weight: ["400", "500", "700"],
+  variable: "--font-body",
   display: "swap",
 });
 
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
     "Stones of Help",
     "Vox Petra",
     "Driven By Heaven",
-    "indie folk-pop worship",
+    "pop worship",
     "Christian music",
   ],
   authors: [{ name: artist.name }],
@@ -49,10 +48,10 @@ export const metadata: Metadata = {
     description: `${debutSingle.title} is the debut single from Asa Cole. ${debutSingle.note}`,
     images: [
       {
-        url: "/asa-cole-hero.jpg",
-        width: 1280,
-        height: 720,
-        alt: "Asa Cole with his guitar in a golden field",
+        url: "/asa-cole-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Asa Cole laughing with arms wide on a sunny rooftop in a red bomber jacket",
       },
     ],
   },
@@ -60,14 +59,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${artist.name} | ${debutSingle.title}`,
     description: debutSingle.note,
-    images: ["/asa-cole-hero.jpg"],
+    images: ["/asa-cole-og.jpg"],
   },
   robots: { index: true, follow: true },
   category: "music",
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f6f0e4",
+  themeColor: "#ff2d6f",
   width: "device-width",
   initialScale: 1,
 };
@@ -78,7 +77,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${outfit.variable} h-full antialiased`}
+      className={`${bagel.variable} ${grotesk.variable} h-full antialiased`}
     >
       <body className="min-h-full text-ink">
         <JsonLd data={getStructuredData()} />
