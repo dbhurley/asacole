@@ -211,9 +211,9 @@ section[id] {
 
 .track-row {
   display: grid;
-  grid-template-columns: 3.2rem minmax(0, 1fr);
+  grid-template-columns: 3.2rem minmax(0, 1fr) auto;
   gap: 0.35rem 0.8rem;
-  align-items: baseline;
+  align-items: center;
   border-top: 1px solid color-mix(in oklab, var(--color-ink) 10%, transparent);
   padding: 1.15rem 0;
 }

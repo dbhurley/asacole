@@ -11,11 +11,13 @@ import {
   labelCredit,
   questions,
   tracks,
+  gallery,
   voxPetraUrl,
 } from "@/content/site-data";
 
 const nav = [
   { href: "#about", label: "About" },
+  { href: "#gallery", label: "Photos" },
   { href: "#album", label: "Album" },
   { href: "#faith", label: "Faith" },
   { href: "#contact", label: "Contact" },
@@ -33,6 +35,7 @@ export default function Home() {
         <FactBar />
         <About />
         <Album />
+        <Gallery />
         <Faith />
         <Questions />
         <Contact />
@@ -144,6 +147,9 @@ function About() {
       <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
         <h2 className="display text-5xl text-ink sm:text-7xl">{about.heading}</h2>
         <div className="space-y-5 text-lg leading-8 text-ink-soft">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image src="/images/asa-about-studio.jpg" alt="Asa Cole playing guitar in a small wood-paneled studio" fill sizes="(min-width: 1024px) 700px, 100vw" className="object-cover" />
+          </div>
           {about.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
@@ -185,9 +191,32 @@ function Album() {
                 {track.title}
                 {"note" in track ? <span className="coming-badge">{track.note}</span> : null}
               </h3>
+              {"image" in track ? (
+                <Image src={track.image} alt={track.imageAlt} width={96} height={96} className="track-photo h-20 w-20 rounded-xl object-cover sm:h-24 sm:w-24" />
+              ) : null}
             </li>
           ))}
         </ol>
+      </div>
+    </section>
+  );
+}
+
+function Gallery() {
+  return (
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <div className="relative h-[42vw] max-h-[560px] min-h-[240px] w-full overflow-hidden">
+        <Image src="/images/asa-banner-wide.jpg" alt="Asa Cole walking across golden prairie hills with his guitar case" fill sizes="100vw" className="object-cover" />
+      </div>
+      <div className="mx-auto max-w-[1180px] px-4 py-16 sm:px-6 sm:py-24">
+        <h2 id="gallery-heading" className="display text-5xl text-ink sm:text-7xl">Photos</h2>
+        <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
+          {gallery.map((photo) => (
+            <div key={photo.src} className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+              <Image src={photo.src} alt={photo.alt} fill sizes="(min-width: 768px) 380px, 50vw" className="object-cover" />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
