@@ -8,6 +8,7 @@ import {
   facts,
   faith,
   labelCredit,
+  lyricVideo,
   questions,
   tracks,
   gallery,
@@ -81,6 +82,7 @@ function Hero() {
           <span className="sticker sticker-yellow">{debutSingle.statusLabel}</span>
           <p className="single-note">{debutSingle.note}</p>
           <StreamingLinks />
+          <LyricVideo />
         </div>
         <div className="hero-actions">
           <a className="btn btn-red" href="#album">
@@ -105,6 +107,26 @@ function Hero() {
         </span>
       </div>
     </section>
+  );
+}
+
+function LyricVideo() {
+  return (
+    <figure className="lyric-video">
+      <video
+        controls
+        playsInline
+        preload="none"
+        poster={lyricVideo.poster}
+        width={lyricVideo.width}
+        height={lyricVideo.height}
+        aria-label={lyricVideo.title}
+      >
+        <source src={lyricVideo.src} type="video/mp4" />
+        <track kind="captions" src={lyricVideo.captions} srcLang="en" label="English lyrics" />
+      </video>
+      <figcaption>{lyricVideo.title}</figcaption>
+    </figure>
   );
 }
 

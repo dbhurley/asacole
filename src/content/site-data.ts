@@ -16,6 +16,22 @@ export const debutSingle = {
   note: "Streaming links are not live yet.",
 } as const;
 
+/**
+ * Dust and Breath lyric video. The MP4 is not committed to git.
+ * Set NEXT_PUBLIC_DUST_AND_BREATH_VIDEO_URL to the hosted file (Vercel Blob URL).
+ * Local fallback: public/video/dust-and-breath-lyric-video.mp4 (gitignored).
+ */
+export const lyricVideo = {
+  title: "Dust and Breath (Lyric Video)",
+  src:
+    process.env.NEXT_PUBLIC_DUST_AND_BREATH_VIDEO_URL ||
+    "/video/dust-and-breath-lyric-video.mp4",
+  poster: "/images/dust-and-breath-lyric-video-poster.jpg",
+  width: 1920,
+  height: 1080,
+  captions: "/video/dust-and-breath.vtt",
+} as const;
+
 export const album = {
   title: "Stones of Help",
   kind: "Debut album",
