@@ -20,7 +20,7 @@ export function GET() {
     .map((link) =>
       link.href.trim()
         ? `- ${link.label}: ${link.href}`
-        : `- ${link.label}: PLACEHOLDER, not live, coming soon`,
+        : `- ${link.label}: link not verified yet`,
     )
     .join("\n");
 
@@ -45,9 +45,7 @@ ${album.verse}
 ## Tracklist
 ${tracks
   .map((track) =>
-    "note" in track
-      ? `${String(track.number).padStart(2, "0")}. ${track.title} (${track.note})`
-      : `${String(track.number).padStart(2, "0")}. ${track.title}`,
+    `${String(track.number).padStart(2, "0")}. ${track.title} (${track.note})`,
   )
   .join("\n")}
 

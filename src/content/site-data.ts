@@ -12,8 +12,9 @@ export const artist = {
 
 export const debutSingle = {
   title: "Dust and Breath",
-  statusLabel: "Coming soon",
-  note: "Streaming links are not live yet.",
+  statusLabel: "Out now",
+  releaseDate: "2026-10-30",
+  note: "Out now on Apple Music. More platforms are rolling out.",
 } as const;
 
 /**
@@ -71,32 +72,32 @@ export type StreamingLink = {
   id: "spotify" | "appleMusic" | "youTube";
   label: string;
   /**
-   * Public URL. PLACEHOLDER: leave "" until Dust and Breath has a live link.
-   * An empty string renders as a non-link Coming soon placeholder.
+   * Public URL. Leave "" until the platform link is verified.
+   * Empty links are not rendered.
    */
   href: string;
 };
 
 /**
- * STREAMING PLACEHOLDERS
- * Dust and Breath is coming soon. Do not add guessed URLs.
+ * STREAMING LINKS
+ * Dust and Breath released 2026-10-30 (DistroKid Good/delivered). Do not add guessed URLs.
  * When a platform link is public, set href to the full https URL.
  */
 export const streamingLinks: StreamingLink[] = [
   {
     id: "spotify",
     label: "Spotify",
-    href: "", // PLACEHOLDER: Spotify URL
+    href: "", // Not verified yet: add the Spotify URL when confirmed
   },
   {
     id: "appleMusic",
     label: "Apple Music",
-    href: "", // PLACEHOLDER: Apple Music URL
+    href: "https://music.apple.com/us/album/dust-and-breath/6827853062",
   },
   {
     id: "youTube",
     label: "YouTube",
-    href: "", // PLACEHOLDER: YouTube URL
+    href: "", // Not verified yet: add the YouTube URL when confirmed
   },
 ];
 
@@ -109,14 +110,14 @@ export function liveStreamingLinks() {
 }
 
 export const tracks = [
-  { number: 1, title: "Dust and Breath", image: "/images/asa-v2-01-dust-and-breath-garden-mural.jpg", imageAlt: "Asa Cole with eyes closed and arms open in front of a bright garden mural with clouds of color", note: "Debut single, coming soon" },
-  { number: 2, title: "Hither Road", image: "/images/asa-v2-02-hither-road-convertible.jpg", imageAlt: "Asa Cole in a red vintage convertible on a palm-lined Hollywood street, looking at the camera" },
-  { number: 3, title: "Pigpen Prayer", image: "/images/asa-v2-03-pigpen-prayer-pink-suit.jpg", imageAlt: "Asa Cole in a pink suit sitting on a curb beside a pig statue" },
-  { number: 4, title: "Wrong Boat", image: "/images/asa-v2-04-wrong-boat-swan-whale.jpg", imageAlt: "Asa Cole as a sea captain at the wheel of a colorful fishing boat beside a giant inflatable whale" },
-  { number: 5, title: "Rooster Crow", image: "/images/asa-v2-05-rooster-crow-sunrise-rooftop.jpg", imageAlt: "Asa Cole waking up in bed under a rooster print blanket, alarm clock at 4:30" },
-  { number: 6, title: "Bronze Serpent", image: "/images/asa-v2-06-bronze-serpent-neon-sign.jpg", imageAlt: "Asa Cole looking up at a glowing bronze serpent sign" },
-  { number: 7, title: "Jordan Water", image: "/images/asa-v2-07-jordan-water-fountain.jpg", imageAlt: "Asa Cole looking up with both hands raised in a city fountain" },
-  { number: 8, title: "Gravel and Glory", image: "/images/asa-v2-08-gravel-and-glory-gold-sequins.jpg", imageAlt: "Asa Cole walking a backstage hall of gold streamers in a gold sequin jacket" },
+  { number: 1, title: "Dust and Breath", image: "/images/asa-v2-01-dust-and-breath-garden-mural.jpg", imageAlt: "Asa Cole with eyes closed and arms open in front of a bright garden mural with clouds of color", note: "Debut single, out now (Oct 30, 2026)" },
+  { number: 2, title: "Hither Road", image: "/images/asa-v2-02-hither-road-convertible.jpg", imageAlt: "Asa Cole in a red vintage convertible on a palm-lined Hollywood street, looking at the camera", note: "Single, out Nov 6, 2026" },
+  { number: 3, title: "Pigpen Prayer", image: "/images/asa-v2-03-pigpen-prayer-pink-suit.jpg", imageAlt: "Asa Cole in a pink suit sitting on a curb beside a pig statue", note: "Single, planned for Nov 13, 2026" },
+  { number: 4, title: "Wrong Boat", image: "/images/asa-v2-04-wrong-boat-swan-whale.jpg", imageAlt: "Asa Cole as a sea captain at the wheel of a colorful fishing boat beside a giant inflatable whale", note: "Single, planned for Nov 20, 2026" },
+  { number: 5, title: "Rooster Crow", image: "/images/asa-v2-05-rooster-crow-sunrise-rooftop.jpg", imageAlt: "Asa Cole waking up in bed under a rooster print blanket, alarm clock at 4:30", note: "Single, planned for Nov 27, 2026" },
+  { number: 6, title: "Bronze Serpent", image: "/images/asa-v2-06-bronze-serpent-neon-sign.jpg", imageAlt: "Asa Cole looking up at a glowing bronze serpent sign", note: "Single, planned for Dec 4, 2026" },
+  { number: 7, title: "Jordan Water", image: "/images/asa-v2-07-jordan-water-fountain.jpg", imageAlt: "Asa Cole looking up with both hands raised in a city fountain", note: "Single, planned for Dec 11, 2026" },
+  { number: 8, title: "Gravel and Glory", image: "/images/asa-v2-08-gravel-and-glory-gold-sequins.jpg", imageAlt: "Asa Cole walking a backstage hall of gold streamers in a gold sequin jacket", note: "Single, planned for Dec 18, 2026" },
 ] as const;
 
 export const facts = [
@@ -141,13 +142,13 @@ export const questions = [
     id: "what-is-the-debut-single",
     question: "What is the debut single?",
     answer:
-      "Dust and Breath is the debut single. It is coming soon, and no streaming link is live yet.",
+      "Dust and Breath is the debut single. It came out October 30, 2026. The next single, Hither Road, is out November 6, 2026.",
   },
   {
     id: "where-can-i-listen",
     question: "Where can I listen?",
     answer:
-      "Dust and Breath is coming soon. Spotify, Apple Music, and YouTube are shown here as Coming soon placeholders. No streaming link is live yet.",
+      "Dust and Breath is out now on Apple Music, with more platforms rolling out. The Dust and Breath lyric video plays on this site.",
   },
   {
     id: "who-releases-the-music",
@@ -212,9 +213,7 @@ export function getStructuredData() {
         position: track.number,
         name: track.title,
         description:
-          "note" in track
-            ? `${track.title}. ${track.note}.`
-            : track.title,
+          `${track.title}. ${track.note}.`,
         byArtist: { "@id": `${siteUrl}#artist` },
         inAlbum: { "@id": `${siteUrl}#stones-of-help` },
         url: `${siteUrl}#track-${track.number}`,
