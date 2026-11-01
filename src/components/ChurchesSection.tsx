@@ -5,7 +5,7 @@ export function ChurchesSection() {
     <section id="churches" className="questions churches-section" aria-labelledby="churches-heading">
       <div>
           <p className="churches-kicker">For Churches</p>
-          <h2 id="churches-heading">Free for your congregation.</h2>
+          <h2 id="churches-heading" className="section-title">Free for your congregation.</h2>
           <p className="churches-intro">
             Download a lyric sheet for any released Asa Cole song to use in worship, small groups, or prayer.
           </p>
