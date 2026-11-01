@@ -1,3 +1,4 @@
+import { ChurchesSection } from "@/components/ChurchesSection";
 import Image from "next/image";
 import { StreamingLinks } from "@/components/StreamingLinks";
 import {
@@ -20,6 +21,7 @@ const nav = [
   { href: "#album", label: "Album" },
   { href: "#gallery", label: "Photos" },
   { href: "#faith", label: "Faith" },
+  { href: "#churches", label: "For Churches" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -40,7 +42,8 @@ export default function Home() {
         <Stage />
         <Gallery />
         <Faith />
-        <Questions />
+        <ChurchesSection />
+      <Questions />
         <Contact />
       </main>
       <Footer />
