@@ -1,4 +1,5 @@
 import { ChurchesSection } from "@/components/ChurchesSection";
+import { MerchSection } from "@/components/MerchSection";
 import Image from "next/image";
 import { StreamingLinks } from "@/components/StreamingLinks";
 import {
@@ -42,7 +43,8 @@ export default function Home() {
         <Stage />
         <Gallery />
         <Faith />
-        <ChurchesSection />
+        <MerchSection />
+      <ChurchesSection />
       <Questions />
         <Contact />
       </main>

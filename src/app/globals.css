@@ -170,3 +170,7 @@ a { color: inherit; }
 .churches-links span { opacity: 0.65; }
 .churches-more { margin: 24px 0 0; }
 .churches-more a { font-weight: 700; color: var(--pink); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Merch */
+.merch-list .merch-image { display: block; margin-bottom: 0.85rem; }
+.merch-list .merch-image img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 4px; }
