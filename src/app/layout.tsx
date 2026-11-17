@@ -54,6 +54,15 @@ export const metadata: Metadata = {
         alt: "Asa Cole walking across a sunny rooftop in a red bomber jacket",
       },
     ],
+    videos: [
+      {
+        url: "https://asacole.com/og-video.mp4",
+        secureUrl: "https://asacole.com/og-video.mp4",
+        type: "video/mp4",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
