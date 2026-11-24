@@ -14,7 +14,7 @@ export const debutSingle = {
   title: "Dust and Breath",
   statusLabel: "Out now",
   releaseDate: "2026-10-30",
-  note: "Dust and Breath and Hither Road are out now on Apple Music.",
+  note: "Dust and Breath and Hither Road are out now on Spotify and Apple Music.",
 } as const;
 
 /**
@@ -87,7 +87,7 @@ export const streamingLinks: StreamingLink[] = [
   {
     id: "spotify",
     label: "Spotify",
-    href: "", // Not verified yet: add the Spotify URL when confirmed
+    href: "https://open.spotify.com/artist/32GLZsWNIQv8alX2tZgTrX",
   },
   {
     id: "appleMusic",
@@ -149,7 +149,7 @@ export const questions = [
     id: "where-can-i-listen",
     question: "Where can I listen?",
     answer:
-      "Dust and Breath and Hither Road are out now on Apple Music. The Dust and Breath lyric video plays on this site.",
+      "Dust and Breath and Hither Road are out now on Spotify and Apple Music. The Dust and Breath lyric video plays on this site.",
   },
   {
     id: "who-releases-the-music",
