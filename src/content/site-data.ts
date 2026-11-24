@@ -14,7 +14,7 @@ export const debutSingle = {
   title: "Dust and Breath",
   statusLabel: "Out now",
   releaseDate: "2026-10-30",
-  note: "Out now on Apple Music. More platforms are rolling out.",
+  note: "Dust and Breath and Hither Road are out now on Apple Music.",
 } as const;
 
 /**
@@ -92,7 +92,7 @@ export const streamingLinks: StreamingLink[] = [
   {
     id: "appleMusic",
     label: "Apple Music",
-    href: "https://music.apple.com/us/album/dust-and-breath/6827853062",
+    href: "https://music.apple.com/us/artist/asa-cole/6827776194",
   },
   {
     id: "youTube",
@@ -110,14 +110,15 @@ export function liveStreamingLinks() {
 }
 
 export const tracks = [
-  { number: 1, title: "Dust and Breath", image: "/images/asa-v2-01-dust-and-breath-garden-mural.jpg", imageAlt: "Asa Cole with eyes closed and arms open in front of a bright garden mural with clouds of color", note: "Debut single, out now (Oct 30, 2026)" },
-  { number: 2, title: "Hither Road", image: "/images/asa-v2-02-hither-road-convertible.jpg", imageAlt: "Asa Cole in a red vintage convertible on a palm-lined Hollywood street, looking at the camera", note: "Single, out Nov 6, 2026" },
-  { number: 3, title: "Pigpen Prayer", image: "/images/asa-v2-03-pigpen-prayer-pink-suit.jpg", imageAlt: "Asa Cole in a pink suit sitting on a curb beside a pig statue", note: "Single, planned for Nov 13, 2026" },
-  { number: 4, title: "Wrong Boat", image: "/images/asa-v2-04-wrong-boat-swan-whale.jpg", imageAlt: "Asa Cole as a sea captain at the wheel of a colorful fishing boat beside a giant inflatable whale", note: "Single, planned for Nov 20, 2026" },
-  { number: 5, title: "Rooster Crow", image: "/images/asa-v2-05-rooster-crow-sunrise-rooftop.jpg", imageAlt: "Asa Cole waking up in bed under a rooster print blanket, alarm clock at 4:30", note: "Single, planned for Nov 27, 2026" },
-  { number: 6, title: "Bronze Serpent", image: "/images/asa-v2-06-bronze-serpent-neon-sign.jpg", imageAlt: "Asa Cole looking up at a glowing bronze serpent sign", note: "Single, planned for Dec 4, 2026" },
-  { number: 7, title: "Jordan Water", image: "/images/asa-v2-07-jordan-water-fountain.jpg", imageAlt: "Asa Cole looking up with both hands raised in a city fountain", note: "Single, planned for Dec 11, 2026" },
-  { number: 8, title: "Gravel and Glory", image: "/images/asa-v2-08-gravel-and-glory-gold-sequins.jpg", imageAlt: "Asa Cole walking a backstage hall of gold streamers in a gold sequin jacket", note: "Single, planned for Dec 18, 2026" },
+  { number: 1, title: "Dust and Breath", image: "/images/asa-v2-01-dust-and-breath-garden-mural.jpg", imageAlt: "Asa Cole with eyes closed and arms open in front of a bright garden mural with clouds of color", note: "Debut single, out now" },
+  { number: 2, title: "Hither Road", image: "/images/asa-v2-02-hither-road-convertible.jpg", imageAlt: "Asa Cole in a red vintage convertible on a palm-lined Hollywood street, looking at the camera", note: "Single, out now" },
+  { number: 3, title: "Bronze Serpent", image: "/images/asa-v2-06-bronze-serpent-neon-sign.jpg", imageAlt: "Asa Cole looking up at a glowing bronze serpent sign", note: "Single, out Dec 4, 2026" },
+  { number: 4, title: "Jordan Water", image: "/images/asa-v2-07-jordan-water-fountain.jpg", imageAlt: "Asa Cole looking up with both hands raised in a city fountain", note: "Single, out Dec 11, 2026" },
+  { number: 5, title: "Gravel and Glory", image: "/images/asa-v2-08-gravel-and-glory-gold-sequins.jpg", imageAlt: "Asa Cole walking a backstage hall of gold streamers in a gold sequin jacket", note: "Single, out Dec 18, 2026" },
+  { number: 6, title: "Pigpen Prayer", image: "/images/asa-v2-03-pigpen-prayer-pink-suit.jpg", imageAlt: "Asa Cole in a pink suit sitting on a curb beside a pig statue", note: "Single, out Dec 25, 2026" },
+  { number: 7, title: "Wrong Boat", image: "/images/asa-v2-04-wrong-boat-swan-whale.jpg", imageAlt: "Asa Cole as a sea captain at the wheel of a colorful fishing boat beside a giant inflatable whale", note: "Single, out Jan 1, 2027" },
+  { number: 8, title: "Rooster Crow", image: "/images/asa-v2-05-rooster-crow-sunrise-rooftop.jpg", imageAlt: "Asa Cole waking up in bed under a rooster print blanket, alarm clock at 4:30", note: "Single, out Jan 8, 2027" },
+  { number: 9, title: "Five Smooth Stones", image: "/images/five-smooth-stones-cover.webp", imageAlt: "Five Smooth Stones single cover", note: "Single, out Jan 15, 2027" },
 ] as const;
 
 export const facts = [
@@ -142,13 +143,13 @@ export const questions = [
     id: "what-is-the-debut-single",
     question: "What is the debut single?",
     answer:
-      "Dust and Breath is the debut single. It came out October 30, 2026. The next single, Hither Road, is out November 6, 2026.",
+      "Dust and Breath is the debut single, and Hither Road followed it. Both are out now. Stones of Help, the debut album, is out January 22, 2027.",
   },
   {
     id: "where-can-i-listen",
     question: "Where can I listen?",
     answer:
-      "Dust and Breath is out now on Apple Music, with more platforms rolling out. The Dust and Breath lyric video plays on this site.",
+      "Dust and Breath and Hither Road are out now on Apple Music. The Dust and Breath lyric video plays on this site.",
   },
   {
     id: "who-releases-the-music",

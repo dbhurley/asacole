@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Asa Cole",
   },
   description:
-    "Asa Cole is a new artist on Vox Petra. Debut single Dust and Breath is out now, with Hither Road out November 6. Debut album Stones of Help, from 1 Samuel 7:12.",
+    "Asa Cole is a new artist on Vox Petra. Dust and Breath and Hither Road are out now. Debut album Stones of Help, from 1 Samuel 7:12, is out January 22, 2027.",
   keywords: [
     "Asa Cole",
     "Dust and Breath",
