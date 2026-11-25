@@ -27,6 +27,7 @@ export function GET() {
   const body = `# ${artist.name}
 
 Official site: ${siteUrl}
+Full release information: ${siteUrl}/llms-full.txt
 Parent label: ${artist.parentLabel} (${voxPetraUrl})
 Imprint: ${artist.imprint}
 Genres: ${artist.genre.join(", ")}
