@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ChurchesSection } from "@/components/ChurchesSection";
 import { MerchSection } from "@/components/MerchSection";
 import Image from "next/image";
@@ -13,6 +14,7 @@ import {
   lyricVideo,
   questions,
   tracks,
+  releases,
   gallery,
   voxPetraUrl,
 } from "@/content/site-data";
@@ -108,7 +110,7 @@ function Hero() {
           className="cover"
         />
         <span className="sticker sticker-pink hero-sticker" aria-hidden="true">
-          Debut single soon
+          Debut single out now
         </span>
       </div>
     </section>
@@ -194,7 +196,8 @@ function Album() {
     <section id="album" className="album">
       <div className="album-head">
         <h2 className="section-title">{album.title}</h2>
-        <p>{album.summary}</p>
+        <p>{album.summary} Coming January 22, 2027.</p>
+        <Link href="/stones-of-help">Explore the album</Link> · <Link href="/music">All music</Link>
       </div>
       <ol className="track-grid">
         {tracks.map((track, i) => (
@@ -203,7 +206,7 @@ function Album() {
               <Image src={track.image} alt={track.imageAlt} fill sizes="(min-width: 1100px) 260px, (min-width: 640px) 45vw, 90vw" className="cover" />
               <span className="track-num">{String(track.number).padStart(2, "0")}</span>
             </div>
-            <h3 className="track-title">{track.title}</h3>
+            <h3 className="track-title"><Link href={`/${releases[i].slug}`}>{track.title}</Link></h3>
             {"note" in track ? <span className="sticker sticker-yellow small">{track.note}</span> : null}
           </li>
         ))}

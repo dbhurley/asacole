@@ -36,6 +36,7 @@ export const lyricVideo = {
 export const album = {
   title: "Stones of Help",
   kind: "Debut album",
+  releaseDate: "2027-01-22",
   scripture: "1 Samuel 7:12",
   stoneName: "Ebenezer",
   verse:
@@ -197,28 +198,11 @@ export function getStructuredData() {
         "@id": `${siteUrl}#stones-of-help`,
         name: album.title,
         description: album.summary,
+        datePublished: album.releaseDate,
         albumReleaseType: "https://schema.org/AlbumRelease",
         byArtist: { "@id": `${siteUrl}#artist` },
-        recordLabel: { "@id": `${siteUrl}#imprint` },
-        numTracks: tracks.length,
-        url: `${siteUrl}#album`,
-        track: tracks.map((track) => ({
-          "@type": "ListItem",
-          position: track.number,
-          item: { "@id": `${siteUrl}#track-${track.number}` },
-        })),
+        url: `${siteUrl}/stones-of-help`,
       },
-      ...tracks.map((track) => ({
-        "@type": "MusicRecording",
-        "@id": `${siteUrl}#track-${track.number}`,
-        position: track.number,
-        name: track.title,
-        description:
-          `${track.title}. ${track.note}.`,
-        byArtist: { "@id": `${siteUrl}#artist` },
-        inAlbum: { "@id": `${siteUrl}#stones-of-help` },
-        url: `${siteUrl}#track-${track.number}`,
-      })),
       {
         "@type": "FAQPage",
         "@id": `${siteUrl}#faq`,
@@ -251,3 +235,25 @@ export const gallery = [
   { src: "/images/asa-v2-06-bronze-serpent-neon-sign.jpg", alt: "Asa Cole under a glowing serpent sign at dusk" },
   { src: "/images/asa-v2-07-jordan-water-fountain.jpg", alt: "Asa Cole with hands raised in a city fountain" },
 ] as const;
+
+export const releases = tracks.map((track, index) => {
+  const details = [
+    ["dust-and-breath", "2026-10-30", ""],
+    ["hither-road", "2026-11-06", ""],
+    ["bronze-serpent", "2026-12-04", "https://distrokid.com/hyperfollow/asacole/bronze-serpent"],
+    ["jordan-water", "2026-12-11", "https://distrokid.com/hyperfollow/asacole/jordan-water"],
+    ["gravel-and-glory", "2026-12-18", "https://distrokid.com/hyperfollow/asacole/gravel-and-glory"],
+    ["pigpen-prayer", "2026-12-25", "https://distrokid.com/hyperfollow/asacole/pigpen-prayer"],
+    ["wrong-boat", "2027-01-01", "https://distrokid.com/hyperfollow/asacole/wrong-boat"],
+    ["rooster-crow", "2027-01-08", "https://distrokid.com/hyperfollow/asacole/rooster-crow"],
+    ["five-smooth-stones", "2027-01-15", "https://distrokid.com/hyperfollow/asacole/five-smooth-stones"],
+  ];
+  const [slug, date, preSave] = details[index];
+  return { ...track, slug, date, preSave, released: date <= "2026-11-24" };
+});
+
+export function displayDate(date: string) {
+  return new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", {
+    month: "long", day: "numeric", year: "numeric", timeZone: "UTC",
+  });
+}
